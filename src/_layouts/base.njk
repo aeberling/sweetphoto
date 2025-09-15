@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">			<title>
+			{{ title | default("wordpress") }}		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name='robots' content='max-image-preview:large'>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<title>{{ title | default("wordpress") }}</title>
+<link rel="alternate" type="application/rss+xml" title="wordpress &raquo; Feed" href="{{ feedUrl | default('/feed/index.htm') }}">
+<link rel="alternate" type="application/rss+xml" title="wordpress &raquo; Comments Feed" href="{{ commentsFeedUrl | default('/comments/feed/index.htm') }}">
+{{ head | safe }}
+</head>
+<body class="{{ bodyClass }}">
+{{ content | safe }}
+</body>
+</html>
