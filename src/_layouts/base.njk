@@ -10,9 +10,48 @@
 	<title>{{ title | default("wordpress") }}</title>
 <link rel="alternate" type="application/rss+xml" title="wordpress &raquo; Feed" href="{{ feedUrl | default('/feed/index.htm') }}">
 <link rel="alternate" type="application/rss+xml" title="wordpress &raquo; Comments Feed" href="{{ commentsFeedUrl | default('/comments/feed/index.htm') }}">
+<link rel='stylesheet' id='twentytwentyfive-style-css' href='/wp-content/themes/twentytwentyfive/style.css?ver=1.2' media='all'>
+<link rel='stylesheet' id='elementor-frontend-css' href='/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='widget-image-css' href='/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='widget-social-icons-css' href='/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='e-apple-webkit-css' href='/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='widget-heading-css' href='/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='widget-divider-css' href='/wp-content/plugins/elementor/assets/css/widget-divider.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='swiper-css' href='/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all'>
+<link rel='stylesheet' id='e-swiper-css' href='/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.30.3' media='all'>
+<link rel='stylesheet' id='widget-testimonial-carousel-css' href='/wp-content/plugins/pro-elements/assets/css/widget-testimonial-carousel.min.css?ver=3.30.0' media='all'>
+<link rel='stylesheet' id='widget-carousel-module-base-css' href='/wp-content/plugins/pro-elements/assets/css/widget-carousel-module-base.min.css?ver=3.30.0' media='all'>
+<link rel='stylesheet' id='ekit-widget-styles-css' href='/wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.5.6' media='all'>
+<link rel='stylesheet' id='ekit-responsive-css' href='/wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.5.6' media='all'>
+<link rel='stylesheet' id='eael-general-css' href='/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.min.css?ver=6.2.2' media='all'>
+<link rel='stylesheet' id='elementor-gf-local-roboto-css' href='/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1742232553' media='all'>
+<link rel='stylesheet' id='elementor-gf-local-robotoslab-css' href='/wp-content/uploads/elementor/google-fonts/css/robotoslab.css?ver=1742232563' media='all'>
+<link rel='stylesheet' id='elementor-gf-local-raleway-css' href='/wp-content/uploads/elementor/google-fonts/css/raleway.css?ver=1742232578' media='all'>
+<link rel='stylesheet' id='elementor-gf-local-cormorantgaramond-css' href='/wp-content/uploads/elementor/google-fonts/css/cormorantgaramond.css?ver=1742232586' media='all'>
+<link rel='stylesheet' id='elementor-gf-local-montserrat-css' href='/wp-content/uploads/elementor/google-fonts/css/montserrat.css?ver=1742232602' media='all'>
+<link rel='stylesheet' id='elementor-icons-ekiticons-css' href='/wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.5.6' media='all'>
 {{ head | safe }}
 </head>
 <body class="{{ bodyClass }}">
+{% include "header.njk" %}
 {{ content | safe }}
+{% include "footer.njk" %}
+<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.30.3" id="elementor-webpack-runtime-js"></script>
+<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.30.3" id="elementor-frontend-modules-js"></script>
+<script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.30.3" id="elementor-frontend-js"></script>
+<script src="/wp-content/plugins/elementor/assets/lib/swiper/v8/swiper.min.js?ver=8.4.5" id="swiper-js"></script>
+<script src="/wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.5.6" id="elementskit-framework-js-frontend-js"></script>
+<script src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.5.6" id="ekit-widget-scripts-js"></script>
+<script src="/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.min.js?ver=3.20.0" id="smush-lazy-load-js"></script>
+<script src="/wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.min.js?ver=6.2.2" id="eael-general-js"></script>
+<script src="/wp-includes/js/comment-reply.min.js?ver=6.8.2" id="comment-reply-js" async="" data-wp-strategy="async"></script>
+<script src="/wp-content/plugins/pro-elements/assets/js/webpack-pro.runtime.min.js?ver=3.30.0" id="elementor-pro-webpack-runtime-js"></script>
+<script src="/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script src="/wp-content/plugins/pro-elements/assets/js/frontend.min.js?ver=3.30.0" id="elementor-pro-frontend-js"></script>
+<script src="/wp-content/plugins/pro-elements/assets/js/elements-handlers.min.js?ver=3.30.0" id="pro-elements-handlers-js"></script>
+<script src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.5.6" id="animate-circle-js"></script>
+<script src="/wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.5.6" id="elementskit-elementor-js"></script>
 </body>
 </html>
