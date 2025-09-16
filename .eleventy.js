@@ -1,4 +1,15 @@
+const markdownIt = require("markdown-it");
+
 module.exports = function(eleventyConfig) {
+  // Configure markdown-it
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  eleventyConfig.setLibrary("md", markdownIt(options));
+
   // Pass through all existing assets exactly as they are
   eleventyConfig.addPassthroughCopy("wp-content");
   eleventyConfig.addPassthroughCopy("wp-includes");

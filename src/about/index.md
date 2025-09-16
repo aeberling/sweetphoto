@@ -1,0 +1,37 @@
+---
+layout: page.njk
+title: "About Us - Sweetie Photo"
+permalink: "/about/"
+pageTitle: "About Us"
+heroImage: "/wp-content/uploads/2024/about-hero.jpg"
+heroAlt: "Sweetie Photo Team"
+teamMembers:
+  - name: "Sarah Johnson"
+    role: "Lead Photographer"
+    bio: "With over 10 years of experience capturing life's precious moments, Sarah brings creativity and passion to every shoot."
+    image: "/wp-content/uploads/2024/team-sarah.jpg"
+  - name: "Michael Chen"
+    role: "Creative Director"
+    bio: "Michael's eye for detail and innovative approach ensures every photo tells a unique story."
+    image: "/wp-content/uploads/2024/team-michael.jpg"
+  - name: "Emma Williams"
+    role: "Photo Editor"
+    bio: "Emma's post-processing expertise brings out the best in every image, creating timeless memories."
+    image: "/wp-content/uploads/2024/team-emma.jpg"
+services:
+  - title: "Wedding Photography"
+    description: "Capture every magical moment of your special day with our professional wedding photography services."
+  - title: "Portrait Sessions"
+    description: "Professional portraits that showcase your personality and style in the best light."
+  - title: "Event Coverage"
+    description: "From corporate events to family celebrations, we document your important occasions."
+values:
+  - title: "Quality"
+    description: "We deliver exceptional quality in every photograph we take."
+  - title: "Creativity"
+    description: "Our creative approach ensures unique and memorable images."
+  - title: "Professionalism"
+    description: "We maintain the highest standards of professionalism in all our work."
+contactEmail: "hello@sweetiephoto.com"
+contactPhone: "+1 (555) 123-4567"
+---
