@@ -1,8 +1,6 @@
 module.exports = function(eleventyConfig) {
-  // Pass through all existing assets exactly as they are
-  eleventyConfig.addPassthroughCopy("wp-content");
-  eleventyConfig.addPassthroughCopy("wp-includes");
-  eleventyConfig.addPassthroughCopy("wp-json");
+  // Pass through all assets
+  eleventyConfig.addPassthroughCopy("src/assets");
 
   // Pass through any standalone files
   eleventyConfig.addPassthroughCopy("webcopy-origin.txt");
